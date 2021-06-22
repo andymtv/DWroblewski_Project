@@ -1,0 +1,113 @@
+.container {
+  &--main {
+    padding: 2.5rem 5rem;
+
+    & .section {
+      &--1 {
+        &_text {
+          &--1 {
+            line-height: 2rem;
+          }
+          &-wrapper--1 {
+            display: flex;
+            align-items: center;
+
+            & img {
+              min-height: 3.3rem;
+              min-width: 2.7rem;
+              max-height: 3.3rem;
+              max-width: 2.7rem;
+              margin-right: 1.2rem;
+            }
+          }
+        }
+      }
+      &--2 {
+        display: flex;
+        align-items: stretch;
+        &_main-wrapper {
+          &--1 {
+            & .trener-image {
+              min-height: 36rem;
+              min-width: 27.5rem;
+              max-height: 36rem;
+              max-width: 27.5rem;
+            }
+          }
+          &--2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-left: 4rem;
+            & .text-wrapper {
+              & p {
+                text-align: center;
+              }
+            }
+
+            & .image-wrapper {
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              margin-top: 1.5rem;
+              padding: 1.5rem;
+              border-top: 1px solid $color-white;
+              border-bottom: 1px solid $color-white;
+              & img {
+                margin-bottom: 2.5rem;
+
+                &:last-of-type {
+                  margin-bottom: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &--3 {
+        & .text-wrapper {
+          & p {
+            letter-spacing: 1px;
+            text-align: center;
+          }
+        }
+      }
+
+      &--4 {
+        border-top: 1px solid $color-white;
+        border-bottom: 1px solid $color-white;
+        padding: 1.8rem 0;
+
+        & .text-wrapper {
+          & p {
+            letter-spacing: 1.8px;
+            text-align: center;
+          }
+        }
+
+        & .image-wrapper {
+          & .image-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+          }
+          & img {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+    }
+  }
+
+  &--cookies {
+    padding: 0 4rem;
+    display: flex;
+    
+    & .text-wrapper {
+      text-align: center;
+    }
+  }
+}

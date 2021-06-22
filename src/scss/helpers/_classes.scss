@@ -1,0 +1,267 @@
+.text {
+  font-size: 1.45rem;
+}
+
+.text-small {
+  font-size: 1.25rem;
+}
+
+.text-xsmall {
+  font-size: 1.075rem;
+}
+
+.text-xxsmall {
+  font-size: 0.937rem;
+}
+
+.text-large {
+  font-size: 1.75rem;
+}
+
+.text-xlarge {
+  font-size: 1.85rem;
+}
+
+.text-xxlarge {
+  font-size: 2.05rem;
+}
+
+.text-xxxlarge {
+  font-size: 3.2rem;
+}
+
+.text-light {
+  font-weight: $text-light;
+}
+
+.text-regular {
+  font-weight: $text-regular;
+}
+
+.text-semibold {
+  font-weight: $text-semibold;
+}
+
+.text-bold {
+  font-weight: $text-bold;
+}
+
+.text-blue {
+  color: $color-blue;
+}
+
+.text-green {
+  color: $color-green;
+}
+
+.text-black {
+  color: $color-black;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.bg-green {
+  background-color: $color-green;
+}
+
+.bg-blue {
+  background-color: $color-blue;
+}
+
+.bg-white {
+  background-color: $color-white;
+}
+
+.bg-black {
+  background-color: $color-black;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.ml-3 {
+  margin-left: 3rem;
+}
+
+.ml-4 {
+  margin-left: 4rem;
+}
+
+.ml-5 {
+  margin-left: 5rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-3 {
+  margin-right: 3rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
+.mr-5 {
+  margin-right: 5rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pt-3 {
+  padding-top: 3rem;
+}
+
+.pt-4 {
+  padding-top: 4rem;
+}
+
+.pt-5 {
+  padding-top: 5rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-2 {
+  padding-bottom: 2rem;
+}
+
+.pb-3 {
+  padding-bottom: 3rem;
+}
+
+.pb-4 {
+  padding-bottom: 4rem;
+}
+
+.pb-5 {
+  padding-bottom: 5rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.pl-3 {
+  padding-left: 3rem;
+}
+
+.pl-4 {
+  padding-left: 4rem;
+}
+
+.pl-5 {
+  padding-left: 5rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pr-3 {
+  padding-right: 3rem;
+}
+
+.pr-4 {
+  padding-right: 4rem;
+}
+
+.pr-5 {
+  padding-right: 5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  transition: all .2s;
+  width: 100%;
+  padding: 1rem;
+
+  &:hover, &:active {
+    border: none;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten($color: $color-green, $amount: 10%);
+    transition: all .2s;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+}
