@@ -68,13 +68,17 @@
         &_text {
           &--1 {
             line-height: 2rem;
+            letter-spacing: 0.55px;
             @media #{$tablet} {
               margin-top: 4rem;
               font-size: 1.35rem;
+              letter-spacing: 0.9px;
+              max-width: 37rem;
             }
           }
 
           &--2 {
+            letter-spacing: 0.9px;
             @media #{$tablet} {
               font-size: 1.35rem;
               padding-bottom: 2.4rem;
@@ -83,6 +87,8 @@
 
             @media #{$laptop} {
               padding-bottom: 2rem;
+              padding-right: 6rem;
+              line-height: 2.1rem;
             }
             
           }
@@ -280,7 +286,7 @@
             justify-content: center;
           }
           & p {
-            letter-spacing: 1px;
+            letter-spacing: .8px;
             text-align: center;
 
             @media #{$laptop} {
@@ -311,7 +317,7 @@
 
         & .text-wrapper {
           & p {
-            letter-spacing: 1.8px;
+            letter-spacing: 1.3px;
             text-align: center;
 
             @media #{$tablet} {
@@ -327,7 +333,7 @@
         & .image-wrapper {
           & .image-row {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             width: 100%;
 
@@ -342,15 +348,34 @@
             @media #{$laptop} {
               justify-content: space-between;
             }
+
+            &:last-of-type {
+              img {
+                width: 20%;
+                &:first-of-type {
+                  width: 45%;
+                }
+                
+              }
+            }
           }
           & img {
             filter: brightness(0) invert(1);
             padding: 5%;
+            width: 25%;
             @media #{$mMobile} {
               padding: 0;
             }
             @media #{$tablet} {
               padding: 1%;
+            }
+
+            &:first-of-type {
+              padding-left: 0;
+            }
+
+            &:last-of-type {
+              padding-right: 0;
             }
           }
         }

@@ -49,6 +49,19 @@ window.addEventListener('load', function () {
     
   }
 
-  changeSize(mainContainer, scale)
+  function orphans() {
+    $('.orphan-chars').each(function () {
+      $(this).html($(this).html().replace(/\s([A-Za-z])\s([A-Za-z])\s/g, ' $1&nbsp;$2&nbsp;'));
+      $(this).html($(this).html().replace(/\s([A-Za-z])\s/g, ' $1&nbsp;'));
+      $(this).html($(this).html().replace(/\(([A-Za-z])\s/g, '($1&nbsp;'));
+      $(this).html($(this).html().replace(/\)([A-Za-z])\s/g, ')$1&nbsp;'));
+      $(this).html($(this).html().replace(/([0-9])\s([0-9])/g, '$1&nbsp;$2'));
+      $(this).html($(this).html().replace(/\sr.\s/g, '&nbsp;r. '));
+      $(this).html($(this).html().replace(/\szł/g, '&nbsp;zł'));
+      $(this).html($(this).html().replace(/\sPLN/g, '&nbsp;PLN'));
+    });
+  }
 
+  changeSize(mainContainer, scale)
+  orphans();
 });
