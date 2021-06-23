@@ -356,6 +356,12 @@
                   width: 45%;
                 }
                 
+                @media #{$tablet} {
+                  width: auto;
+                  &:first-of-type {
+                    width: auto;
+                  }
+                }
               }
             }
           }
@@ -368,6 +374,7 @@
             }
             @media #{$tablet} {
               padding: 1%;
+              width: auto;
             }
 
             &:first-of-type {
