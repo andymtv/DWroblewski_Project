@@ -4,7 +4,10 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  min-width: 100vw;
   font-size: 10px;
   font-family: $font;
 
@@ -16,15 +19,46 @@ html {
 }
 
 body {
+  width: 100%;
   height: 100%;
-  padding: 0;
   margin: 0;
+  position: relative;
   box-sizing: border-box;
+  min-height: 100vh;
   background-image: url('../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 5% 0;
   background-attachment: fixed;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.main-wrapper {
+  position: relative;
+  padding: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  @media #{$mMobile} {
+    padding: 2.5rem 5rem;
+  }
+
+  @media #{$tablet} {
+    padding: 4rem 5rem;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  @media #{$mTablet} {
+    transform: translateX(-10%);
+  }
+
+  @media #{$laptop} {
+    max-width: 1024px;
+    transform: translateX(0%);
+  }
 }
 
 

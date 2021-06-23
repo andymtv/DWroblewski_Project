@@ -9,3 +9,15 @@ $text-light: 300;
 $text-regular: 400;
 $text-semibold: 600;
 $text-bold: 700;
+
+// Breakpoints
+$xsMobile: "only screen and (min-width: 320px)";
+$sMobile: "only screen and (min-width: 360px)";
+$mMobile: "only screen and (min-width: 480px)";
+$tablet: "only screen and (min-width: 768px)";
+$mTablet: "only screen and (min-width: 1024px)";
+$lTablet: "only screen and (min-width: 1152px)";
+$sLaptop: "only screen and (min-width: 1280px)";
+$laptop: "only screen and (min-width: 1366px)";
+$desktop: "only screen and (min-width: 1440px)";
+$lDesktop: "only screen and (min-width: 1921px)";
