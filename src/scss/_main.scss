@@ -1,6 +1,7 @@
 .container {
   &--main {
     width: 100%;
+    transition: all .2s;
 
     @media #{$tablet} {
       display: flex;
@@ -139,10 +140,10 @@
         &_main-wrapper {
           &--1 {
             & .trener-image {
-              min-height: 28rem;
-              min-width: 21.5rem;
-              max-height: 28rem;
-              max-width: 21.5rem;
+              min-height: 20rem;
+              min-width: 15.5rem;
+              max-height: 20rem;
+              max-width: 15.5rem;
 
               @media #{$mMobile} {
                 min-height: 36rem;
@@ -209,10 +210,15 @@
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              margin-top: 1.5rem;
-              padding: 1.5rem;
+              margin-top: 0.5rem;
+              padding: 0.5rem;
               border-top: 1px solid $color-white;
               border-bottom: 1px solid $color-white;
+
+              @media #{$mMobile} {
+                margin-top: 1.5rem;
+                padding: 1.5rem;
+              }
 
 
               @media #{$tablet} {
@@ -227,8 +233,12 @@
               }
 
               & a {
-                margin-bottom: 2.5rem;
+                margin-bottom: 0.5rem;
                 transition: all .2s;
+
+                @media #{$mMobile} {
+                  margin-bottom: 2.5rem;
+                }
 
                 @media #{$tablet} {
                   margin-bottom: 0;
@@ -319,12 +329,10 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            flex-wrap: wrap;
             width: 100%;
 
             @media #{$mMobile} {
               justify-content: space-between;
-              flex-wrap: nowrap;
             }
 
             @media #{$tablet} {
@@ -348,6 +356,7 @@
         }
       }
     }
+
   }
 
   &--footer {

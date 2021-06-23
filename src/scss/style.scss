@@ -10,6 +10,7 @@ html {
   min-width: 100vw;
   font-size: 10px;
   font-family: $font;
+  overflow: hidden;
 
   & * {
     padding: 0;
@@ -22,15 +23,15 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  position: relative;
   box-sizing: border-box;
   min-height: 100vh;
+  max-height: 95vh;
+  overflow: hidden;
   background-image: url('../img/background.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 5% 0;
   background-attachment: fixed;
-  overflow-x: hidden;
   min-width: 320px;
 }
 
