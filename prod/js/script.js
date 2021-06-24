@@ -26,24 +26,17 @@ window.addEventListener('load', function () {
     if(window.innerWidth >= 1024) {
       if (el[0].getBoundingClientRect().height + $('.section--2_main-wrapper--2')[0].getBoundingClientRect().height + 30 >= window.innerHeight) {
         scale = scale - 0.01;
-        console.log(scale);
         el.css('transform', `scale(${scale})`)
         changeSize(el, scale);
       } else {
-        console.log('ok');
-        console.log(el[0].getBoundingClientRect());
         el.css('margin-top', `-${el[0].getBoundingClientRect().top}px`)
       }
     } else {
       if (el[0].getBoundingClientRect().height >= window.innerHeight) {
         scale = scale - 0.01;
-        let elTransform = el.css('transform');
-        console.log(elTransform);
         el.css('transform', `scale(${scale})`)
         changeSize(el, scale);
       } else {
-        console.log('ok');
-        console.log(el[0].getBoundingClientRect());
         el.css('margin-top', `-${el[0].getBoundingClientRect().top}px`)
       }
     }
