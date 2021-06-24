@@ -37,6 +37,7 @@
             }
 
             & p {
+              letter-spacing: 0.2px;
               @media #{$tablet} {
                 display: block;
                 position: absolute;
@@ -69,6 +70,9 @@
           &--1 {
             line-height: 2rem;
             letter-spacing: 0.55px;
+            text-align: left;
+            hyphens: auto;
+       
             @media #{$tablet} {
               margin-top: 4rem;
               font-size: 1.35rem;
@@ -96,7 +100,7 @@
           &-wrapper--1 {
             display: flex;
             align-items: flex-start;
-
+            margin-top: 1.8rem;
             @media #{$tablet} {
               margin-left: -4rem;
             }
@@ -175,13 +179,14 @@
           }
           &--2 {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             flex-direction: column;
             margin-left: 2rem;
 
             @media #{$mMobile} {
               margin-left: 4rem;
+              justify-content: center;
             }
 
             @media #{$tablet} {
@@ -216,14 +221,19 @@
               display: flex;
               flex-direction: column;
               align-items: flex-start;
-              margin-top: 0.5rem;
-              padding: 0.5rem;
-              border-top: 1px solid $color-white;
-              border-bottom: 1px solid $color-white;
+              justify-content: space-between;
+              margin-top: 1rem;
+              padding: 0 0.5rem 0 1rem;
+              height: 100%;
+
 
               @media #{$mMobile} {
                 margin-top: 1.5rem;
                 padding: 1.5rem;
+                border-top: 1px solid $color-white;
+                border-bottom: 1px solid $color-white;
+                height: auto;
+                justify-content: flex-start;
               }
 
 
@@ -239,7 +249,7 @@
               }
 
               & a {
-                margin-bottom: 0.5rem;
+                margin-bottom: 1rem;
                 transition: all .2s;
 
                 @media #{$mMobile} {
@@ -341,17 +351,9 @@
               justify-content: space-between;
             }
 
-            @media #{$tablet} {
-              justify-content: center;
-            }
-
-            @media #{$laptop} {
-              justify-content: space-between;
-            }
-
             &:last-of-type {
               img {
-                width: 20%;
+                width: auto;
                 &:first-of-type {
                   width: 45%;
                 }
@@ -367,8 +369,7 @@
           }
           & img {
             filter: brightness(0) invert(1);
-            padding: 5%;
-            width: 25%;
+            width: auto;
             @media #{$mMobile} {
               padding: 0;
             }

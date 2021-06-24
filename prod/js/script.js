@@ -30,6 +30,8 @@ window.addEventListener('load', function () {
         changeSize(el, scale);
       } else {
         el.css('margin-top', `-${el[0].getBoundingClientRect().top}px`)
+        el.css('padding-left', 0);
+        el.css('padding-right', 0);
       }
     } else {
       if (el[0].getBoundingClientRect().height >= window.innerHeight) {
@@ -38,6 +40,13 @@ window.addEventListener('load', function () {
         changeSize(el, scale);
       } else {
         el.css('margin-top', `-${el[0].getBoundingClientRect().top}px`)
+        if(window.innerWidth >= 768) {
+          el.css('padding-left', '1.5rem');
+          el.css('padding-right', '1.5rem');
+        } else {
+          el.css('padding-left', 0);
+          el.css('padding-right', 0);
+        }
       }
     }
     
