@@ -37,7 +37,8 @@ window.addEventListener('load', function () {
     } else {
       if (el[0].getBoundingClientRect().height >= window.innerHeight) {
         scale = scale - 0.01;
-        console.log(scale);
+        let elTransform = el.css('transform');
+        console.log(elTransform);
         el.css('transform', `scale(${scale})`)
         changeSize(el, scale);
       } else {
