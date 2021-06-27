@@ -33,6 +33,22 @@ body {
   background-position: 5% 0;
   background-attachment: fixed;
   min-width: 320px;
+
+  @media #{$lTablet} {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+  }
+
+  @media #{$sLaptop} {
+    background-image: url('../img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 5% 0;
+    background-attachment: fixed;
+  }
 }
 
 .main-wrapper {
@@ -56,8 +72,8 @@ body {
     transform: translateX(-10%);
   }
 
-  @media #{$laptop} {
-    max-width: 1024px;
+  @media #{$lTablet} {
+    max-width: 884px;
     transform: translateX(0%);
   }
 }

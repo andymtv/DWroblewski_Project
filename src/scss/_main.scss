@@ -6,10 +6,13 @@
     @media #{$tablet} {
       display: flex;
       flex-direction: column;
-      width: 56%;
+      width: 58%;
       padding-right: 3rem;
     }
 
+    @media #{$lTablet} {
+      max-width: 44rem;
+    }
     
     & .section {
 
@@ -31,8 +34,9 @@
                 top: 25.3rem;
               }
 
-              @media #{$laptop} {
-                top: 23.6rem;
+              @media #{$lTablet} {
+                left: 39%;
+                top: 24rem;
               }
             }
 
@@ -51,8 +55,9 @@
                 top: 25.3rem;
               }
 
-              @media #{$laptop} {
-                top: 23.3rem;
+              @media #{$lTablet} {
+                top: 23.5rem;
+                left: 43%;
                 font-size: 1.32rem;
               }
             }
@@ -62,8 +67,12 @@
 
       &--1 {
         @media #{$tablet} {
-          width: 85%;
+          width: 95%;
           margin: 0;
+        }
+
+        @media #{$lTablet} {
+          width: 90%;
         }
 
         &_text {
@@ -87,12 +96,14 @@
               font-size: 1.35rem;
               padding-bottom: 2.4rem;
               border-bottom: 1px solid $color-white;
+              width: 78%;
             }
 
-            @media #{$laptop} {
-              padding-bottom: 2rem;
-              padding-right: 6rem;
+            @media #{$lTablet} {
+              padding-bottom: 1.6rem;
+              padding-right: 0;
               line-height: 2.1rem;
+              width: 80%;
             }
             
           }
@@ -107,6 +118,10 @@
 
             @media #{$mTablet} {
               margin-top: 1rem;
+            }
+
+            @media #{$lTablet} {
+              margin-top: .5rem;
             }
         
 
@@ -143,7 +158,7 @@
           margin: 4rem 0 0 0 
         }
 
-        @media #{$laptop} {
+        @media #{$lTablet} {
           right: 3rem;
         }
 
@@ -163,13 +178,6 @@
               }
 
               @media #{$mTablet} {
-                min-height: 57rem;
-                min-width: 41.5rem;
-                max-height: 57rem;
-                max-width: 41.5rem;
-              }
-
-              @media #{$laptop} {
                 min-height: 54rem;
                 min-width: 41.5rem;
                 max-height: 54rem;
@@ -197,17 +205,19 @@
 
             @media #{$mTablet} {
               margin-left: 0;
-              right: 70%;
+              right: 76%;
               bottom: -22.5%;
             }
 
-            @media #{$laptop} {
-              right: 90%;
+            @media #{$lTablet} {
+              right: 85%;
             }
 
             & .text-wrapper {
+              width: 100%;
               & p {
                 text-align: center;
+                letter-spacing: .7px;
 
                 @media #{$tablet} {
                   & br {
@@ -291,7 +301,7 @@
         }
 
         & .text-wrapper {
-          @media #{$laptop} {
+          @media #{$lTablet} {
             display: flex;
             justify-content: center;
           }
@@ -299,13 +309,28 @@
             letter-spacing: .8px;
             text-align: center;
 
-            @media #{$laptop} {
+            @media #{$mTablet} {
+              margin-top: 1.5rem;
+            }
+
+            @media #{$lTablet} {
               font-size: 1.85rem;
               line-height: 2.45rem;
               letter-spacing: 0.95px;
               max-width: 29rem;
-              margin-bottom: .5rem;
+              margin-top: .5rem;
             }
+          }
+        }
+
+        & .btn-main {
+
+          @media #{$mTablet} {
+            margin-top: 2.5rem;
+          }
+
+          @media #{$lTablet} {
+            margin-top: 1.5rem;
           }
         }
       }
@@ -319,10 +344,12 @@
         @media #{$tablet} {
           border-top: none;
           padding-top: 0;
+          padding-bottom: 4rem;
         }
 
         @media #{$mTablet} {
           margin-bottom: 1.5rem;
+          padding-bottom: 1.8rem;
         }
 
         & .text-wrapper {
@@ -334,7 +361,7 @@
               text-align: left;
             }
 
-            @media #{$laptop} {
+            @media #{$lTablet} {
               font-size: 1.35rem;
             }
           }
@@ -430,7 +457,7 @@
       max-width: 100rem;
     }
 
-    @media #{$laptop} {
+    @media #{$lTablet} {
       width: auto;
       max-width: 105rem;
     }

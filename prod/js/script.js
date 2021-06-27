@@ -40,12 +40,12 @@ window.addEventListener('load', function () {
         changeSize(el, scale);
       } else {
         el.css('margin-top', `-${el[0].getBoundingClientRect().top}px`)
-        if(window.innerWidth >= 768) {
+        if(window.innerWidth > 768) {
           el.css('padding-left', '1.5rem');
           el.css('padding-right', '1.5rem');
         } else {
-          el.css('padding-left', 0);
-          el.css('padding-right', 0);
+          el.css('padding-left', '5rem');
+          el.css('padding-right', '5rem');
         }
       }
     }
