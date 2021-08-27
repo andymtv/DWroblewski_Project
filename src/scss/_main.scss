@@ -199,7 +199,8 @@
 
             @media #{$tablet} {
               position: absolute;
-              bottom: -29.5%;
+              //bottom: -29.5%;
+              bottom: -34.5%;
               margin-left: 2rem;
             }
 
@@ -211,6 +212,7 @@
 
             @media #{$lTablet} {
               right: 85%;
+              //right: 24%;
             }
 
             & .text-wrapper {
@@ -343,8 +345,9 @@
 
         @media #{$tablet} {
           border-top: none;
-          padding-top: 0;
-          padding-bottom: 4rem;
+          padding-top: 1.8rem;
+          //padding-bottom: 4rem;
+          padding-bottom: 1.8rem;
         }
 
         @media #{$mTablet} {
